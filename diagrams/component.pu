@@ -1,0 +1,12 @@
+@startuml
+package "Redux" {
+  [Actions]
+  [Reducer]
+  [Store]
+}
+
+[React Components] --> [Actions]
+[Actions] --> [Store]
+[Store] --> [Reducer]
+[Reducer] --> [Store]
+@enduml

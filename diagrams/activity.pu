@@ -1,0 +1,12 @@
+@startuml
+start
+:User clicks Increment/Decrement;
+if (Action type?) then (INCREMENT)
+  :Increase count;
+else (DECREMENT)
+  :Decrease count;
+endif
+:Update State in Store;
+:Notify Component;
+stop
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+class CounterComponent {
+  +render()
+  +dispatch()
+}
+
+class Actions {
+  +increment()
+  +decrement()
+}
+
+class Store {
+  +getState()
+  +dispatch()
+}
+
+class Reducer {
+  +counterReducer(state, action)
+}
+
+CounterComponent --> Actions
+Actions --> Store
+Store --> Reducer
+@enduml

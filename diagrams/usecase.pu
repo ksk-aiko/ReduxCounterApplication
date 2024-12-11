@@ -1,0 +1,8 @@
+@startuml
+actor User
+usecase "Increment Count" as UC1
+usecase "Decrement Count" as UC2
+
+User --> UC1
+User --> UC2
+@enduml

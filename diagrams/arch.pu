@@ -1,0 +1,12 @@
+@startuml
+actor User
+participant "React Component" as RC
+participant "Redux Store" as RS
+participant "Reducer" as R
+
+User -> RC : Increment/Decrement Click
+RC -> RS : Dispatch Action
+RS -> R : Pass Action & State
+R --> RS : Updated State
+RS -> RC : Notify State Change
+@enduml
